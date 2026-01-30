@@ -54,15 +54,11 @@ This repository is a portfolio-style implementation of a **Bayesian Marketing Mi
 ```
 .
 ├── notebooks/
-│   └── MMM_Budget_Allocation.ipynb
-├── data/
-│   └── (optional) dataset files if included
-├── results/
-│   └── (optional) exported figures/tables
+│ └── MMM_Budget_Allocation.ipynb
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
-
----
 
 ## Data notes
 
@@ -106,7 +102,7 @@ jupyter lab
 jupyter notebook
 ```
 
-Open: `notebooks/mmm_case_study.ipynb`
+Open: `MMM_Budget_Allocation.ipynb`
 
 ---
 
