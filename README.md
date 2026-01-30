@@ -66,15 +66,16 @@ This repository is a portfolio-style implementation of a **Bayesian Marketing Mi
 
 ## Data notes
 
-This project uses the **multidimensional mock dataset** from PyMC-Marketing.  
-If the notebook raises a `FileNotFoundError` for `data/multidimensional_mock_data.csv`, use one of these approaches:
+This notebook uses the **multidimensional mock dataset** that ships with PyMC-Marketing (same as the official example).
+If you see `FileNotFoundError: data/multidimensional_mock_data.csv`, it usually means the notebook is looking for a local `./data/` folder.
 
-### Option 1 — Load from the PyMC-Marketing packaged data directory (recommended)
+Recommended approach (load from the packaged PyMC-Marketing data directory):
+
 ```python
-from pymc_marketing.paths import data_dir
+from pymc_marketing.paths import data_dir as pmcm_data_dir
 import pandas as pd
 
-data_path = data_dir / "multidimensional_mock_data.csv"
+data_path = pmcm_data_dir / "multidimensional_mock_data.csv"
 df = pd.read_csv(data_path, parse_dates=["date"], index_col=0)
 
 ---
