@@ -7,7 +7,7 @@ This repository is a portfolio-style implementation of a **Bayesian Marketing Mi
 ## What this project does
 
 ### Goals
-- Model the relationship between **weekly sales** and:
+- Model the relationship between weekly sales and:
   - **Paid media channels** (spend)
   - **Control variables** (events, trend/time index, etc.)
   - **Seasonality** (yearly seasonality terms)
