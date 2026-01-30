@@ -121,23 +121,11 @@ Open: `notebooks/mmm_case_study.ipynb`
 
 ## Results summary
 
-### Out-of-sample performance
-- **CRPS** is computed in the notebook for the holdout window (see the Evaluation section output).
-- Out-of-sample **posterior predictive** plots are used to visually assess fit and uncertainty calibration.
+- **Out-of-sample evaluation:** Posterior predictive checks show the model tracks the holdout trend reasonably well; CRPS is reported in the notebook evaluation section.
+- **Optimization (media-only uplift):** The constrained optimizer improves aggregate channel contribution; the posterior uplift distribution has an expected increase of ~+11% with ~90.7% probability of being > 0 (94% HDI ≈ [-3.8%, +26%]).
+- **Total sales uplift:** When baseline + seasonality are included, the uplift is near zero (mean ≈ -0.27%) with wide uncertainty (94% HDI ≈ [-27%, +25%]) and ~52% probability of being > 0.
+- **Allocation shifts:** Budget is rebalanced away from lower marginal-return channels and toward channels with higher remaining marginal return, subject to per-channel spend bounds (±50%).
 
-### Channel efficiency and allocation insights
-- The fitted response curves show **diminishing returns (saturation)** and different **marginal ROAS** across channels.
-- Under realistic business constraints (per-channel upper/lower bounds), the optimizer recommends **rebalancing spend** away from channels with lower marginal return and toward channels with higher remaining marginal return.
-
-### Optimization outcome (what the plots show)
-- **Aggregated channel contributions (media-only uplift):**
-  - Expected improvement of **~+11%** (mean ≈ **0.11**)
-  - **~90.7%** probability that uplift is **> 0**
-  - 94% HDI roughly **-3.8% to +26%**
-- **Total sales uplift (including intercept + seasonality):**
-  - Uplift is near zero (mean ≈ **-0.0027**)
-  - Probability of improvement is close to a coin flip (**~52.4% > 0**)
-  - 94% HDI approximately **-27% to +25%**
 
 **Interpretation:** The optimized plan improves **media-driven contribution efficiency** more clearly than **total sales** in the holdout window, since total sales variability is often dominated by **baseline (intercept)** and **seasonality**, and practical constraints limit how aggressively budgets can shift.
 
