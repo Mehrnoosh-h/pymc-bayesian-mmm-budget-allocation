@@ -88,7 +88,6 @@ print(data_path.exists())
 
 ## How to run
 
-### Option A — pip + venv
 ```bash
 python -m venv .venv
 # Windows:
