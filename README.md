@@ -64,7 +64,6 @@ This repository is a portfolio-style implementation of a **Bayesian Marketing Mi
 
 ---
 
-```md
 ## Data notes
 
 This notebook uses the **multidimensional mock dataset** shipped with PyMC-Marketing (same as the official example).
