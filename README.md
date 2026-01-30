@@ -54,7 +54,7 @@ This repository is a portfolio-style implementation of a **Bayesian Marketing Mi
 ```
 .
 ├── notebooks/
-│   └── mmm_case_study.ipynb
+│   └── MMM_Budget_Allocation.ipynb
 ├── data/
 │   └── (optional) dataset files if included
 ├── results/
