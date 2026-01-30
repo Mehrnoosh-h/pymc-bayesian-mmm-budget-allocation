@@ -76,13 +76,14 @@ import pandas as pd
 
 data_path = pmcm_data_dir / "multidimensional_mock_data.csv"
 df = pd.read_csv(data_path, parse_dates=["date"], index_col=0)
-
+```
 
 ### Optional
 Add a quick check:
+```python
 print(data_path)
 print(data_path.exists())
-
+```
 ---
 
 ## How to run
