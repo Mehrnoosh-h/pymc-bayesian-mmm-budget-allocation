@@ -64,7 +64,6 @@ This repository is a portfolio-style implementation of a **Bayesian Marketing Mi
 
 ---
 
-## Data notes
 ```md
 ## Data notes
 
