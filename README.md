@@ -1,4 +1,4 @@
-# Bayesian Marketing Mix Modeling (MMM) with PyMC-Marketing — Case Study + Budget Optimization
+📓 **Notebook:** [MMM_Budget_Allocation.ipynb](notebooks/MMM_Budget_Allocation.ipynb)
 
 This repository is a portfolio-style implementation of a **Bayesian Marketing Mix Model (MMM)** using **PyMC-Marketing**. It follows the official MMM budget-allocation workflow end-to-end: exploratory data checks, Bayesian model fitting, posterior diagnostics, contribution/ROAS interpretation, and **budget allocation optimization**.
 
@@ -66,7 +66,7 @@ This repository is a portfolio-style implementation of a **Bayesian Marketing Mi
 
 ## Data notes
 
-This project uses the **multidimensional mock dataset** from PyMC-Marketing (the same one used in the official notebook).  
+This project uses the **multidimensional mock dataset** from PyMC-Marketing.  
 If the notebook raises a `FileNotFoundError` for `data/multidimensional_mock_data.csv`, use one of these approaches:
 
 ### Option 1 — Load from the PyMC-Marketing packaged data directory (recommended)
