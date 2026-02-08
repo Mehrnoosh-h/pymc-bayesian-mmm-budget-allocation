@@ -147,5 +147,5 @@ https://www.pymc-marketing.io/en/stable/notebooks/mmm/mmm_budget_allocation_exam
 ---
 ## License
 - MIT 
-:contentReference[oaicite:0]{index=0}
+
 ::contentReference[oaicite:1]{index=1}
